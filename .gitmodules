@@ -10,3 +10,6 @@
 [submodule "src/MandarinMedien/MMCmfMenuBundle"]
 	path = src/MandarinMedien/MMCmfMenuBundle
 	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfMenuBundle.git
+[submodule "src/MandarinMedien/MMCmfNodeBundle"]
+	path = src/MandarinMedien/MMCmfNodeBundle
+	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfNodeBundle.git
