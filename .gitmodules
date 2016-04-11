@@ -1,3 +1,6 @@
 [submodule "src/MandarinMedien/MMMediaBundle"]
 	path = src/MandarinMedien/MMMediaBundle
 	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMMediaBundle.git
+[submodule "src/MandarinMedien/MMCmfAdminBundle"]
+	path = src/MandarinMedien/MMCmfAdminBundle
+	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfAdminBundle.git
