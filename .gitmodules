@@ -13,3 +13,6 @@
 [submodule "src/MandarinMedien/MMCmfNodeBundle"]
 	path = src/MandarinMedien/MMCmfNodeBundle
 	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfNodeBundle.git
+[submodule "src/MandarinMedien/MMCmfRoutingBundle"]
+	path = src/MandarinMedien/MMCmfRoutingBundle
+	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfRoutingBundle.git
