@@ -1,0 +1,147 @@
+<html>
+<head>
+
+    <title>{{ node.metaTitle }}</title>
+    <meta property="og:title" content="{{ node.metaTitle }}">
+
+    {% if node.metaDescription is not empty %}
+        <meta property="og:description" content="{{ node.metaDescription }}">
+        <meta name="description" content="{{ node.metaDescription }}">
+    {% endif %}
+
+    {% if node.metaAuthor is not empty %}
+        <meta name="author" content="{{ node.metaAuthor }}">
+    {% endif %}
+
+    {% if node.metaRobots is not empty %}
+        <meta name="robots" content="{{ node.metaRobots }}">
+    {% endif %}
+
+    {% if node.metaImage is not empty %}
+        <link rel="image_src" href="{{ asset('node.metaImage') }}">
+        <meta property="og:image" content="{{ absolute_url(asset('node.metaImage')) }}">
+    {% else %}
+        <link rel="image_src" href="asset('bundles/app/img/og-image.jpg')">
+        <meta property="og:image" content="{{ absolute_url(asset('bundles/app/img/og-image.jpg')) }}">
+    {% endif %}
+
+    <meta name="keywords" content="{{ node.metaKeywords }}">
+
+    {% stylesheets
+    '@MMCmfContentBundle/Resources/public/vendor/bootstrap/dist/css/bootstrap-theme.min.css'
+    '@mmmedia_assets_css'
+    '@mm_cmf_content_assets_css'
+    '@app_website_css' %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+
+    {% stylesheets 'bundles/mmcmfcontent/vendor/summernote/dist/summernote.css' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+
+    {#  NEED !!! #}
+    {% include '@MMCmfContent/cmf/cmf_javascript_vars.html.twig' %}
+
+</head>
+<body>
+<!--
+-------------------------------------------------------------------
+| this is the Page default template                               |
+| you can overwrite and configure your own in your app config     |
+-------------------------------------------------------------------
+-->
+
+{% block navigation %}
+
+
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="{{ asset('/bundles/app/images/mandarine.png') }}" height="100%"><span>MMCmfDemo</span></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+
+
+                        {% block navigation_inner %}
+                            {{ renderMenuByName('Main',{},'bootstrap') }}
+                        {% endblock %}
+
+                        {#<ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>#}
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block body %}
+
+    <div>
+        <div class="ContentNodeChildren">
+            {% for childNode in node.nodes %}
+                {{ childNode|cmfParse }}
+            {% endfor %}
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- Marketing messaging and featurettes
+        ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2015 ACME Company, Inc. &middot;
+            {% block metanavi %}
+                {{ renderMenuByName('Meta',{}) }}
+            {% endblock %}
+            </p>
+        </footer>
+
+    </div><!-- /.container -->
+
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    {% javascripts
+    '@MMCmfContentBundle/Resources/public/vendor/jquery/dist/jquery.min.js'
+    '@MMCmfContentBundle/Resources/public/vendor/bootstrap/dist/js/bootstrap.min.js'
+    '@mm_cmf_content_assets_js' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+</body>
+</html>

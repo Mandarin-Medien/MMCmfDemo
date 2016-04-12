@@ -5,12 +5,13 @@ imports:
     - { resource: '@MMMediaBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfContentBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfAdminBundle/Resources/config/config.yml' }
-    #- { resource: '@AppBundle/Resources/config/config.yml' }
+    - { resource: '@MMCmfMenuBundle/Resources/config/config.yml' }
+    - { resource: '@AppBundle/Resources/config/config.yml' }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: en
+    locale: de
 
 framework:
     #esi:             ~

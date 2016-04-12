@@ -1,0 +1,29 @@
+{% extends 'MMCmfContentBundle:cmf/ContentNode:ContentNode_default.html.twig' %}
+
+{% block cmf_tileContentNode_widget_content %}
+    {% block cmf_contentNode_widget_content %}
+
+        <div class="teaser">
+            {% if node.imageSource %}
+                <img src="{{ node.imageSource }}" />
+            {% else %}
+            {% endif %}
+
+            <div class="content">
+                {% if node.headlineType %}<{{ node.headlineType }} class="heading" data-cmf-field="headline" data-cmf-field-type="string">{% endif %}
+                    {{ node.headline|raw }}
+                {% if node.headlineType %}</{{ node.headlineType }}>{% endif %}
+                <div class="text-container">
+                    <div
+                            data-cmf-field="text"
+                            data-cmf-field-type="WYSIWYG"
+                    >{% if node.text is not empty %}{{ node.text|raw }}{% else %}<small class="no-content-hint"><i>{{ 'kein Text vorhanden'|trans }}</i></small>{% endif %}
+                    </div>
+                </div>
+                {% if node.link %}
+                    <a href="{{ node.link }}" target="_blank">{{ 'erzähl mir mehr davon'|trans }} <span class="fa fa-chevron-right"></span></a>
+                {% endif %}
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

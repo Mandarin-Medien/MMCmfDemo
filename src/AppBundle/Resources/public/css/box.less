@@ -1,0 +1,104 @@
+
+
+/**
+ * Box Style
+ */
+.box {
+
+  .box-title {
+    background: @brand-primary;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      font-family: Raleway;
+      font-size: 18px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding: 15px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .box-body {
+
+    padding: @grid-gutter-width;
+
+    @media (max-width: @screen-xs-max) {
+
+      padding: @grid-gutter-width/2;
+
+
+      .btn {
+        padding: 15px;
+      }
+
+    }
+
+    .clearfix();
+
+    background: #fff;
+
+    .form-group {
+
+      label {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+      .checkbox,
+      &.form-group-checkbox {
+        label {
+          display: block;
+          text-transform: none;
+          letter-spacing: inherit;
+          font-weight: 500;
+        }
+      }
+
+      margin-bottom: 20px;
+
+      input[type=text],
+      input[type=email] {
+        background: #e6e6e6;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 15px;
+        padding: @grid-gutter-width/2;
+        line-height: 16px;
+        height: auto;
+      }
+
+      @media (max-width: @screen-xs-max) {
+        input[type=file] {
+          width: 100%;
+        }
+      }
+
+      &.has-error {
+        input:not([type=submit]) {
+          border-left: 5px solid @brand-danger;
+        }
+
+        label {
+          color: @brand-danger;
+        }
+      }
+
+      button[type=submit] {
+        margin: 0;
+      }
+    }
+  }
+
+  .form-actions {
+    clear: both;
+
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+}

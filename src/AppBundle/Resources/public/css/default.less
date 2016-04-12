@@ -1,0 +1,40 @@
+@import "bootstrap_core";
+
+/**
+ * implement MMCmfContentBundle bootstrap less
+ */
+@import "../../../../MandarinMedien/MMCmfContentBundle/Resources/public/css/mmCmfContentEditor_bootstrap.less";
+
+@import "navigation";
+@import "box";
+@import "carousel";
+
+
+/**
+ * contentNodes
+ */
+@import "myParagraphItem";
+@import "contentNodeTypes/tileContentNode";
+@import "contentNodeTypes/carouselContentNode";
+
+body{
+  margin-top: 100px;
+}
+
+.coloredContainerContentNode
+{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.ContainerContentNode.beige-bg
+{
+  .coloredContainerContentNode;
+  background: beige;
+}
+
+
+.ContainerContentNode.standard
+{
+  margin-bottom: 30px;
+}

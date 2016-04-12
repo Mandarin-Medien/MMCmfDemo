@@ -1,0 +1,37 @@
+mm_cmf_content:
+    page_nodes:
+        MandarinMedien\MMCmfContentBundle\Entity\Page:
+            templates:
+                - { name: 'default', template: 'AppBundle:cmf:Page/default.html.twig' }
+
+    content_nodes:
+        #
+        #  configure core ContentNode Entity
+        #
+        MandarinMedien\MMCmfContentBundle\Entity\ParagraphContentNode:
+            templates:
+                - { name: 'default', template: "AppBundle:cmf:ParagraphContentNode/ParagraphContentNode_default.html.twig" }
+                #- { name: 'Upside-Down', template: "MMCmfContentBundle:cmf:ParagraphContentNode/ParagraphContentNode_upside_down.html.twig" }
+        #
+        # add new custom ContentNode Entity
+        #
+        AppBundle\Entity\CarouselContentNode:
+            gridable: false
+            icon: 'fa fa-sliders'
+            hiddenFields:
+                  - "attributes"
+                  - "position"
+                  - "classes"
+            templates:
+                - { name: 'default', template: "AppBundle:cmf:CarouselContentNode/CarouselContentNode_default.html.twig" }
+
+        AppBundle\Entity\TileContentNode:
+            gridable: true
+            icon: 'fa fa-th'
+            hiddenFields:
+                  - "attributes"
+                  - "position"
+                  - "classes"
+            templates:
+                - { name: 'default', template: "AppBundle:cmf:TileContentNode/TileContentNode_default.html.twig" }
+
