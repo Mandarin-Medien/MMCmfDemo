@@ -8,6 +8,7 @@
 /app/phpunit.xml
 /build/
 /vendor/
+/src/AppBundle/Resources/public/vendor/
 /bin/
 /composer.phar
 /web/assetic

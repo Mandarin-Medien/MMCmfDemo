@@ -1,0 +1,25 @@
+{
+  "name": "MMCmfDemo",
+  "authors": [
+    "Toni Gurski <tg@mandarin-medien.de>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/AppBundle/Resources/public/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wow": "wow.js#1.1.2",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.0"
+  }
+}

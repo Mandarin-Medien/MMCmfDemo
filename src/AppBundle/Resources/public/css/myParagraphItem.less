@@ -1,0 +1,37 @@
+.ParagraphContentNode {
+
+  .myParagraphItem {
+
+    .image img {
+      .img-responsive;
+      .center-block;
+      .img-circle;
+    }
+
+  }
+
+  &:nth-child(odd) .myParagraphItem {
+    .text {
+      .make-sm-column(7);
+    }
+
+    .image {
+      .make-sm-column(5);
+
+    }
+  }
+
+  &:nth-child(even) .myParagraphItem {
+    .text {
+      .make-sm-column(7);
+      .make-sm-column-push(5);
+    }
+
+    .image {
+      .make-sm-column-pull(7);
+      .make-sm-column(5);
+
+    }
+  }
+}
+

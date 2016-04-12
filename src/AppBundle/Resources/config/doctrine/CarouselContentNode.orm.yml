@@ -1,0 +1,6 @@
+AppBundle\Entity\CarouselContentNode:
+    type: entity
+    table: null
+    repositoryClass: MandarinMedien\MMCmfContentBundle\Entity\ContentNodeRepository
+    fields:
+    lifecycleCallbacks: {  }

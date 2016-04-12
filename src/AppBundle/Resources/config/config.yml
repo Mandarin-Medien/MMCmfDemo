@@ -1,0 +1,13 @@
+imports:
+    - { resource: contentNode.config.yml }
+
+assetic:
+    bundles:
+        - AppBundle
+    assets:
+        app_website_css:
+            inputs:
+                - '@AppBundle/Resources/public/css/default.less'
+            filters:
+                - 'cssrewrite'
+

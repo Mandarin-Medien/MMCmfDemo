@@ -1,0 +1,11 @@
+AppBundle\Entity\TileContentNode:
+    type: entity
+    table: null
+    repositoryClass: MandarinMedien\MMCmfContentBundle\Entity\ContentNodeRepository
+    fields:
+        link:
+            type: string
+            length: 255
+            nullable: true
+
+    lifecycleCallbacks: {  }

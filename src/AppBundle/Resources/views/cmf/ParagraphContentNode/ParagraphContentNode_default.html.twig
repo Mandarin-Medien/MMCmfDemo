@@ -1,0 +1,33 @@
+{% extends 'MMCmfContentBundle:cmf/ContentNode:ContentNode_default.html.twig' %}
+
+{% block cmf_parapgraphContentNode_widget_content %}
+
+    {% block cmf_contentNode_widget_content %}
+        <div class="row myParagraphItem">
+            <div class="text">
+
+                {% if node.headlineType %}<{{ node.headlineType }} class="featurette-heading" data-cmf-field="headline" data-cmf-field-type="string">{% endif %}
+                {{ node.headline|raw }}
+                {% if node.headlineType %}</{{ node.headlineType }}>{% endif %}
+                <div class="lead">
+                    <div data-cmf-field="text" data-cmf-field-type="WYSIWYG"
+                    >{% if node.text is not empty %}{{ node.text|raw }}{% else %}Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.{% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="image">
+                <img
+                    {% if node.imageSource %}
+                        src="{{ node.imageSource }}"
+                    {% else %}
+                        data-src="holder.js/500x500/auto"
+                    {% endif %}
+                    alt=""
+                    title=""
+                />
+            </div>
+        </div>
+    {% endblock %}
+
+{% endblock %}

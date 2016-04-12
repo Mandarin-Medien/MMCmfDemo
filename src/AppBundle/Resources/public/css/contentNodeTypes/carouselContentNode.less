@@ -1,0 +1,38 @@
+.CarouselContentNode {
+  &:first-child {
+    margin-top: -100px;
+  }
+  .ContentNode-settings {
+    z-index: 100;
+  }
+
+  .item {
+    .TileContentNode {
+
+      .ContentNode-settings {
+        margin-top: 200px;
+      }
+
+      .teaser {
+        height: 100%;
+      }
+      .teaser > img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        max-width: 100%;
+        left: 0;
+      }
+      .content {
+        position: relative;
+        .carousel-caption;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 50%;
+      }
+
+    }
+  }
+
+}
