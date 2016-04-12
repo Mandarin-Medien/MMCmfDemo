@@ -1,18 +1,18 @@
 [submodule "src/MandarinMedien/MMMediaBundle"]
 	path = src/MandarinMedien/MMMediaBundle
-	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMMediaBundle.git
+url=git@github.com:Mandarin-Medien/MMMediaBundle.git
 [submodule "src/MandarinMedien/MMCmfAdminBundle"]
 	path = src/MandarinMedien/MMCmfAdminBundle
-	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfAdminBundle.git
+url=git@github.com:Mandarin-Medien/MMCmfAdminBundle.git
 [submodule "src/MandarinMedien/MMCmfContentBundle"]
 	path = src/MandarinMedien/MMCmfContentBundle
-	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfContentBundle.git
+url=git@github.com:Mandarin-Medien/MMCmfContentBundle.git
 [submodule "src/MandarinMedien/MMCmfMenuBundle"]
 	path = src/MandarinMedien/MMCmfMenuBundle
-	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfMenuBundle.git
+url=git@github.com:Mandarin-Medien/MMCmfMenuBundle.git
 [submodule "src/MandarinMedien/MMCmfNodeBundle"]
 	path = src/MandarinMedien/MMCmfNodeBundle
-	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfNodeBundle.git
+url=git@github.com:Mandarin-Medien/MMCmfNodeBundle.git
 [submodule "src/MandarinMedien/MMCmfRoutingBundle"]
 	path = src/MandarinMedien/MMCmfRoutingBundle
-	url = https://MM-Psiiirus@github.com/Mandarin-Medien/MMCmfRoutingBundle.git
+url=git@github.com:Mandarin-Medien/MMCmfRoutingBundle.git
