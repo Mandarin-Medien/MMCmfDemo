@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: '@MMMediaBundle/Resources/config/config.yml' }
+    - { resource: '@MMCmfNodeBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfContentBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfAdminBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfMenuBundle/Resources/config/config.yml' }

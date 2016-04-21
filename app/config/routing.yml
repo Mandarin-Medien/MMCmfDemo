@@ -5,6 +5,9 @@ mm_cmf_content:
     resource: "@MMCmfContentBundle/Resources/config/routing.yml"
     prefix:   /mmcmfcontent
 
+mm_media:
+    resource: "@MMMediaBundle/Resources/config/routing.yml"
+
 #... other HERE routings ...
 
 # put this at the very last
