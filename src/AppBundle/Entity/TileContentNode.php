@@ -9,10 +9,16 @@
 namespace AppBundle\Entity;
 
 use MandarinMedien\MMCmfContentBundle\Entity\ParagraphContentNode;
+use MandarinMedien\MMMediaBundle\Entity\MediaSortable;
 
 class TileContentNode extends ParagraphContentNode
 {
     protected $link;
+
+    /**
+     * @var MediaSortable
+     */
+    protected $media;
 
     /**
      * @return mixed
@@ -32,7 +38,21 @@ class TileContentNode extends ParagraphContentNode
         return $this;
     }
 
+    /**
+     * @return MediaSortable
+     */
+    public function getMedia()
+    {
+        return $this->media;
+    }
 
-
-
+    /**
+     * @param MediaSortable $media
+     * @return TileContentNode
+     */
+    public function setMedia($media)
+    {
+        $this->media = $media;
+        return $this;
+    }
 }

@@ -7,5 +7,10 @@ AppBundle\Entity\TileContentNode:
             type: string
             length: 255
             nullable: true
-
+    oneToOne:
+        media:
+            targetEntity: MandarinMedien\MMMediaBundle\Entity\MediaSortable
+            cascade:
+              - persist
+              - remove
     lifecycleCallbacks: {  }
