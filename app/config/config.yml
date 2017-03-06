@@ -4,8 +4,8 @@ imports:
     - { resource: services.yml }
     - { resource: '@MMMediaBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfNodeBundle/Resources/config/config.yml' }
-    - { resource: '@MMCmfContentBundle/Resources/config/config_symfony3.yml' }
-    - { resource: '@MMCmfAdminBundle/Resources/config/config_symfony3.yml' }
+    - { resource: '@MMCmfContentBundle/Resources/config/config.yml' }
+    - { resource: '@MMCmfAdminBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfMenuBundle/Resources/config/config.yml' }
     - { resource: '@AppBundle/Resources/config/config.yml' }
 
