@@ -4,8 +4,8 @@ imports:
     - { resource: services.yml }
     - { resource: '@MMMediaBundle/Resources/config/config.yml' }
     - { resource: '@MMCmfNodeBundle/Resources/config/config.yml' }
-    - { resource: '@MMCmfContentBundle/Resources/config/config.yml' }
-    - { resource: '@MMCmfAdminBundle/Resources/config/config.yml' }
+    - { resource: '@MMCmfContentBundle/Resources/config/config_symfony3.yml' }
+    - { resource: '@MMCmfAdminBundle/Resources/config/config_symfony3.yml' }
     - { resource: '@MMCmfMenuBundle/Resources/config/config.yml' }
     - { resource: '@AppBundle/Resources/config/config.yml' }
 
@@ -81,5 +81,5 @@ assetic:
         less:
             node: /usr/local/bin/node
             node_paths: [/usr/local/lib/node_modules]
-            apply_to: "\.less$"
+            apply_to: '\.less$'
         cssrewrite: ~
