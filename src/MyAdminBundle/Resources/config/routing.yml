@@ -1,3 +1,7 @@
 admin_index:
     resource: "@MMAdminBundle/Resources/config/routing.yml"
     prefix: /
+
+mm_cmf_page_addon:
+    resource: "@MMCmfAdminPageAddonBundle/Resources/config/routing.yml"
+    prefix:   /page

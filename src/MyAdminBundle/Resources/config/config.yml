@@ -1,6 +1,6 @@
 imports:
   - { resource: "@MMAdminBundle/Resources/config/config.yml" }
-
+  - { resource: "@MMCmfAdminPageAddonBundle/Resources/config/services.yml" }
 
 mm_admin:
     appearance:
@@ -27,7 +27,7 @@ mm_admin:
                     label: Content Management
                     icon: ~
                     entries:
-                        - {name: Pages, icon: file-o, route: mm_admin_homepage}
+                        - {name: Pages, icon: file-o, route: mm_cmf_admin_page_addon_page}
 
                 user:
                     label: System Settings
