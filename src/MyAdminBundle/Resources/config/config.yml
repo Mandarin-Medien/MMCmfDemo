@@ -1,6 +1,5 @@
 imports:
   - { resource: "@MMAdminBundle/Resources/config/config.yml" }
-  - { resource: "@MMCmfAdminPageAddonBundle/Resources/config/services.yml" }
 
 mm_admin:
     appearance:
