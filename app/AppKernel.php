@@ -36,8 +36,9 @@ class AppKernel extends Kernel
 
             // fürs AdminBundle
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new \Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new MandarinMedien\MMCmf\Admin\PageAddonBundle\MMCmfAdminPageAddonBundle(),
+            new MandarinMedien\MMCmf\Admin\RoutingAddonBundle\MMCmfAdminRoutingAddonBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

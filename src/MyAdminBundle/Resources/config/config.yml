@@ -1,5 +1,6 @@
 imports:
   - { resource: "@MMAdminBundle/Resources/config/config.yml" }
+  - { resource: "@MMCmfAdminRoutingAddonBundle/Resources/config/config.yml" }
 
 mm_admin:
     appearance:
@@ -27,6 +28,12 @@ mm_admin:
                     icon: ~
                     entries:
                         - {name: Pages, icon: file-o, route: mm_cmf_admin_page_addon_page}
+
+                routing:
+                    label: Routing
+                    icon: ~
+                    entries:
+                        - {name: Route, icon: file-o, route: mm_cmf_admin_routing_addon_noderoute}
 
                 user:
                     label: System Settings

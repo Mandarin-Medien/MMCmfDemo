@@ -22,3 +22,6 @@ url=git@github.com:Mandarin-Medien/MMCmfRoutingBundle.git
 [submodule "src/MandarinMedien/MMCmf/Admin/PageAddonBundle"]
 	path = src/MandarinMedien/MMCmf/Admin/PageAddonBundle
 	url = https://github.com/Mandarin-Medien/MMCmfAdminPageAddonBundle
+[submodule "src/MandarinMedien/MMCmf/Admin/RoutingAddonBundle"]
+	path = src/MandarinMedien/MMCmf/Admin/RoutingAddonBundle
+	url = https://github.com/Mandarin-Medien/MMCmfAdminRoutingAddonBundle
