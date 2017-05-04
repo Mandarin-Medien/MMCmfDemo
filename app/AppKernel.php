@@ -24,11 +24,19 @@ class AppKernel extends Kernel
             new MandarinMedien\MMCmfRoutingBundle\MMCmfRoutingBundle(),
             new MandarinMedien\MMCmfContentBundle\MMCmfContentBundle(),
             new MandarinMedien\MMCmfMenuBundle\MMCmfMenuBundle(),
-            new MandarinMedien\MMCmfAdminBundle\MMCmfAdminBundle(),
+
+            //new MandarinMedien\MMCmfAdminBundle\MMCmfAdminBundle(),
+
+            new MandarinMedien\MMAdminBundle\MMAdminBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
 
             new AppBundle\AppBundle(),
+            new MyAdminBundle\MyAdminBundle(),
+
+            // fürs AdminBundle
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new \Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

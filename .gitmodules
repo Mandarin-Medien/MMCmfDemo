@@ -16,3 +16,6 @@ url=git@github.com:Mandarin-Medien/MMCmfNodeBundle.git
 [submodule "src/MandarinMedien/MMCmfRoutingBundle"]
 	path = src/MandarinMedien/MMCmfRoutingBundle
 url=git@github.com:Mandarin-Medien/MMCmfRoutingBundle.git
+[submodule "src/MandarinMedien/MMAdminBundle"]
+	path = src/MandarinMedien/MMAdminBundle
+	url = git@git.mandarinmedien.de:mandarin/MMAdminBundle.git

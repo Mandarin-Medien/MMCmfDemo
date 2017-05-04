@@ -1,0 +1,3 @@
+admin_index:
+    resource: "@MMAdminBundle/Resources/config/routing.yml"
+    prefix: /

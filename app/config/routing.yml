@@ -1,12 +1,21 @@
+my_admin:
+    resource: "@MyAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
 mm_media:
     resource: "@MMMediaBundle/Resources/config/routing.yml"
 
-mm_cmf_admin:
-    resource: "@MMCmfAdminBundle/Resources/config/routing.yml"
+#mm_cmf_admin:
+#    resource: "@MMCmfAdminBundle/Resources/config/routing.yml"
 
 mm_cmf_content:
     resource: "@MMCmfContentBundle/Resources/config/routing.yml"
     prefix:   /mmcmfcontent
+
+admin:
+    resource: "@MyAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
 
 #... other HERE routings ...
 
