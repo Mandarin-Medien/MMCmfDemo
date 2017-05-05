@@ -9,3 +9,7 @@ mm_cmf_page_addon:
 mm_cmf_routing_addon:
     resource: "@MMCmfAdminRoutingAddonBundle/Resources/config/routing.yml"
     prefix:   /routing
+
+mm_cmf_contentnode_addon:
+    resource: "@MMCmfAdminContentNodeAddonBundle/Resources/config/routing.yml"
+    prefix:   /content-node

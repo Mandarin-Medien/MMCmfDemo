@@ -21,7 +21,10 @@ url=git@github.com:Mandarin-Medien/MMCmfRoutingBundle.git
 	url = git@git.mandarinmedien.de:mandarin/MMAdminBundle.git
 [submodule "src/MandarinMedien/MMCmf/Admin/PageAddonBundle"]
 	path = src/MandarinMedien/MMCmf/Admin/PageAddonBundle
-	url = https://github.com/Mandarin-Medien/MMCmfAdminPageAddonBundle
+	url = git@github.com:Mandarin-Medien/MMCmfAdminPageAddonBundle.git
 [submodule "src/MandarinMedien/MMCmf/Admin/RoutingAddonBundle"]
 	path = src/MandarinMedien/MMCmf/Admin/RoutingAddonBundle
-	url = https://github.com/Mandarin-Medien/MMCmfAdminRoutingAddonBundle
+	url = git@github.com:Mandarin-Medien/MMCmfAdminRoutingAddonBundle.git
+[submodule "src/MandarinMedien/MMCmf/Admin/ContentNodeAddonBundle"]
+	path = src/MandarinMedien/MMCmf/Admin/ContentNodeAddonBundle
+	url = git@github.com:Mandarin-Medien/MMCmfAdminContentNodeAddonBundle.git

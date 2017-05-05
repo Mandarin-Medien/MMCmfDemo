@@ -2,6 +2,20 @@ imports:
   - { resource: "@MMAdminBundle/Resources/config/config.yml" }
   - { resource: "@MMCmfAdminRoutingAddonBundle/Resources/config/config.yml" }
 
+assetic:
+  assets:
+        mm_admin_assets_javascripts_extra:
+            filters:
+                  - 'uglifyjs'
+            inputs:
+                  - '@MMCmfContentBundle/Resources/public/js/form/NodeTreeType.js'
+                  - '@MMCmfAdminContentNodeAddonBundle/Resources/public/js/core.js'
+
+        mm_admin_assets_css_extra:
+            filters:
+                  - 'less'
+            inputs:
+                  - '@MMCmfContentBundle/Resources/public/css/type/nodeTreeType.less'
 mm_admin:
     appearance:
         name: CCDS4
@@ -28,6 +42,7 @@ mm_admin:
                     icon: ~
                     entries:
                         - {name: Pages, icon: file-o, route: mm_cmf_admin_page_addon_page}
+                        - {name: Contents, icon: file-o, route: mm_cmf_admin_content_node_addon_contentnode}
 
                 routing:
                     label: Routing
