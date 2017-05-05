@@ -1,6 +1,7 @@
 imports:
   - { resource: "@MMAdminBundle/Resources/config/config.yml" }
   - { resource: "@MMCmfAdminRoutingAddonBundle/Resources/config/config.yml" }
+  - { resource: "@MMCmfAdminPageAddonBundle/Resources/config/config.yml" }
 
 assetic:
   assets:

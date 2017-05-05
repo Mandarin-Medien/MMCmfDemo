@@ -28,3 +28,6 @@ url=git@github.com:Mandarin-Medien/MMCmfRoutingBundle.git
 [submodule "src/MandarinMedien/MMCmf/Admin/ContentNodeAddonBundle"]
 	path = src/MandarinMedien/MMCmf/Admin/ContentNodeAddonBundle
 	url = git@github.com:Mandarin-Medien/MMCmfAdminContentNodeAddonBundle.git
+[submodule "src/MandarinMedien/MMFormGroupBundle"]
+	path = src/MandarinMedien/MMFormGroupBundle
+	url = git@git.mandarinmedien.de:mandarin/MMFormGroupBundle.git

@@ -40,6 +40,7 @@ class AppKernel extends Kernel
             new MandarinMedien\MMCmf\Admin\PageAddonBundle\MMCmfAdminPageAddonBundle(),
             new MandarinMedien\MMCmf\Admin\RoutingAddonBundle\MMCmfAdminRoutingAddonBundle(),
             new MandarinMedien\MMCmf\Admin\ContentNodeAddonBundle\MMCmfAdminContentNodeAddonBundle(),
+            new MandarinMedien\MMFormGroupBundle\MMFormGroupBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
@@ -59,7 +60,7 @@ class AppKernel extends Kernel
      */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+        $loader->load($this->getRootDir() . '/config/config_' . $this->getEnvironment() . '.yml');
     }
 
     /**
@@ -75,7 +76,7 @@ class AppKernel extends Kernel
      */
     public function getCacheDir()
     {
-        return dirname(__DIR__).'/var/cache/'.$this->getEnvironment();
+        return dirname(__DIR__) . '/var/cache/' . $this->getEnvironment();
     }
 
     /**
@@ -83,6 +84,6 @@ class AppKernel extends Kernel
      */
     public function getLogDir()
     {
-        return dirname(__DIR__).'/var/logs';
+        return dirname(__DIR__) . '/var/logs';
     }
 }
