@@ -39,7 +39,9 @@
 
         "knplabs/knp-menu-bundle": "^2.1",
         "knplabs/knp-paginator-bundle": "^2.5",
-        "symfony/assetic-bundle": "^2.8"
+        "symfony/assetic-bundle": "^2.8",
+
+        "gedmo/doctrine-extensions": "dev-master"
 
     },
     "require-dev": {
