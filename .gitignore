@@ -14,3 +14,5 @@
 /web/css
 /web/js
 web/media
+node_modules
+web/build
