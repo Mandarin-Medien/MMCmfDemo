@@ -26,33 +26,33 @@ mm_admin:
             groups:
                 general:
                     label: ~
-                    entries:
-                        - {name: Dashboard, icon: dashboard, route: mm_admin_homepage}
+                    children:
+                        Dashboard: {label: Dashboard, icon: dashboard, route: mm_admin_homepage}
 
 #                entities:
 #                    label: Daten
 #                    icon: database
-#                    entries:
-#                        - {name: Cinemas, icon: home, route: admin_cinema_index}
-#                        - {name: Movies, icon: film, route: admin_movie_index}
-#                        - {name: Events, icon: calendar, route: admin_event_index}
-#                        - {name: Scheduled Shows, icon: history, route: admin_showtime_schedule_index}
+#                    children:
+#                        - {label: Cinemas, icon: home, route: admin_cinema_index}
+#                        - {label: Movies, icon: film, route: admin_movie_index}
+#                        - {label: Events, icon: calendar, route: admin_event_index}
+#                        - {label: Scheduled Shows, icon: history, route: admin_showtime_schedule_index}
 
                 cms:
                     label: Content Management
                     icon: ~
-                    entries:
-                        - {name: Pages, icon: file-o, route: mm_cmf_admin_page_addon_page}
-                        - {name: Contents, icon: file-o, route: mm_cmf_admin_content_node_addon_contentnode}
+                    children:
+                        Pages: {label: Pages, icon: file-o, route: mm_cmf_admin_page_addon_page}
+                        Contents: {label: Contents, icon: file-o, route: mm_cmf_admin_content_node_addon_contentnode}
 
                 routing:
                     label: Routing
                     icon: ~
-                    entries:
-                        - {name: Route, icon: file-o, route: mm_cmf_admin_routing_addon_noderoute}
+                    children:
+                        Route: {label: Route, icon: file-o, route: mm_cmf_admin_routing_addon_noderoute}
 
                 user:
                     label: System Settings
                     icon: cogs
-                    entries:
-                        - {name: User, icon: users, route: mm_admin_user}
+                    children:
+                        User: {label: User, icon: users, route: mm_admin_user}
