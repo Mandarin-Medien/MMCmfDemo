@@ -27,17 +27,12 @@
 
     <meta name="keywords" content="{{ node.metaKeywords }}">
 
-    {% stylesheets
-    '@MMCmfContentBundle/Resources/public/vendor/bootstrap/dist/css/bootstrap-theme.min.css'
-    '@mmmedia_assets_css'
-    '@mm_cmf_content_assets_css'
-    '@app_website_css' %}
-    <link rel="stylesheet" href="{{ asset_url }}"/>
-    {% endstylesheets %}
 
-    {% stylesheets 'bundles/mmcmfcontent/vendor/summernote/dist/summernote.css' filter='cssrewrite' %}
-    <link rel="stylesheet" href="{{ asset_url }}"/>
-    {% endstylesheets %}
+    <link href="{{ asset('bundles/mmmedia/dist/css/mmmedia.css') }}" media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('bundles/mmmedia/dist/css/mmmedia.css') }}" media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('bundles/mmcmfcontent/dist/css/mmCmfContentEditor.css') }}" media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('build/web_css.css') }}" media="screen" rel="stylesheet" type="text/css" />
+
 
     {#  NEED !!! #}
     {#{% include "@MMCmfAdmin/Page/boot.html.twig" %}#}
@@ -137,13 +132,9 @@
 {% block javascripts %}
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-    {% javascripts
-    '@MMCmfContentBundle/Resources/public/vendor/jquery/dist/jquery.min.js'
-    '@MMCmfContentBundle/Resources/public/vendor/bootstrap/dist/js/bootstrap.min.js'
-    '@mmmedia_assets_js'
-    '@mm_cmf_content_assets_js' %}
-    <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    <script type="text/javascript" src="{{ asset('bundles/mmmedia/dist/js/mmmedia.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/mmcmfcontent/dist/js/mmcmfcontent.js') }}"></script>
+
 {% endblock %}
 </body>
 </html>

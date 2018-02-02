@@ -16,8 +16,12 @@ Encore
     //.addEntry('react', './src/WebsiteBundle/React/cinestar/src/index.js')
     .addEntry('admin_js', ['babel-polyfill', './assets/js/admin.js'])
 
+    .addEntry('web_js', ['babel-polyfill', './assets/js/web.js'])
+
     // less entry point
     .addStyleEntry('admin_css', './assets/css/admin.less')
+
+    .addStyleEntry('web_css', './assets/css/web.less')
 
     // allow less files to be processed
     .enableLessLoader(function (options) {
